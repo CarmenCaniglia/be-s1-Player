@@ -3,7 +3,7 @@ package Entities;
 public class Image extends MultimediaItem implements Adjustable{
     private int brightness;
 
-    public Image (String title){
+    public Image (String title, int brightness){
         super(title);
         this.brightness = 5;
     }
