@@ -17,13 +17,13 @@ public class Image extends MultimediaItem implements Adjustable{
     }
     @Override
     public void brightUp() {
-        if (this.brightness < 10) this.brightness++;
+        if (this.brightness < 5) this.brightness++;
         else System.out.println("Luminosità al MASSIMO");
     }
 
     @Override
     public void brightDown() {
-        if (this.brightness > 0)this.brightness--;
+        if (this.brightness > 1)this.brightness--;
         else System.out.println("Luminosità al MINIMO");
     }
 }
