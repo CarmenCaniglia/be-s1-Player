@@ -1,6 +1,7 @@
 package Entities;
 
 public abstract class MultimediaItem {
+    //il titolo è l'unico elemento in comune tra le sottoclassi
     private final String title;
 
     public MultimediaItem(String title){

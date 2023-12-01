@@ -7,13 +7,15 @@ public class Image extends MultimediaItem implements Adjustable{
         super(title);
         this.brightness = brightness;
     }
-    //show() solo per le immagini
+    //metodo show() solo per le immagini
     public void show(){
         System.out.println(getTitle());
         for(int i = 0; i < brightness; i++){
             System.out.println("*");
         }
     }
+
+    //metodi per la regolazione della luminosità
     @Override
     public void brightUp() {
         if (this.brightness < 5) this.brightness++;

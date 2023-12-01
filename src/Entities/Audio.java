@@ -14,6 +14,7 @@ public class Audio extends MultimediaItem implements Playable{
         return duration;
     }
 
+    //metodo play() per gli elementi riproducibili
     @Override
     public void play() {
         System.out.println("Riproduci audio: " + getTitle() + " per " + getDuration() + "sec");
@@ -23,6 +24,7 @@ public class Audio extends MultimediaItem implements Playable{
         System.out.println();
     }
 
+    //metodi per il controllo del volume
     @Override
     public void volUp() {
         if(this.volume < 10) this.volume++;

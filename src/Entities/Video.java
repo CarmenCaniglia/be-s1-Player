@@ -14,6 +14,7 @@ public class Video extends MultimediaItem implements Playable, Adjustable {
         return duration;
     }
 
+    //metodi per la regolazione della luminosità
     @Override
     public void brightUp() {
         if (this.brightness < 5) this.brightness++;
@@ -26,6 +27,7 @@ public class Video extends MultimediaItem implements Playable, Adjustable {
         else System.out.println("Luminosità al MINIMO");
     }
 
+    //metodo play() per gli elementi riproducibili
     @Override
     public void play() {
         System.out.println("Riproduci video: "+getTitle() + " per " +getDuration()+"sec");
@@ -39,6 +41,7 @@ public class Video extends MultimediaItem implements Playable, Adjustable {
         System.out.println();
     }
 
+    //metodi per la regolazione del volume
     @Override
     public void volUp() {
         if(this.volume < 10) this.volume++;
