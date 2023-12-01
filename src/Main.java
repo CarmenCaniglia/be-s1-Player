@@ -8,57 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-
-        /*Image myImage = new Image("Foto ");
-        String input;
-       System.out.println("Configura la luminosità dell'immagine:");
-        myImage.show();
-
-        do{
-            System.out.println("Scrivi 'up' per aumentare e 'down' per diminuire la luminosità.--> 'exit' se vuoi uscire.");
-            input = scanner.nextLine();
-             switch (input){
-                 case "up":
-                     myImage.brightUp();
-                     break;
-                 case "down":
-                     myImage.brightDown();
-                     break;
-                 case "exit":
-                     System.out.println("Fine della configurazione!");
-                     break;
-                 default:
-                     System.out.println("Comando non valido!!!");
-                     break;
-             }
-             myImage.show();
-        }while (!input.equals("exit"));
-
-        Audio audio= new Audio("Song ", 120,10);
-        Video video= new Video("Video ", 100, 10, 5);
-
-        String input;
-        do{
-            System.out.println("Scegli un'opzione: 'audio', 'video', 'image'");
-            input= scanner.nextLine();
-
-            switch (input){
-                case "audio":
-                    audio.play();
-                    break;
-                case "video":
-                    video.play();
-                    break;
-                case "image":
-                    myImage.show();
-                    break;
-                default:
-                    System.out.println("Comando non valido!!!");
-                    break;
-            }
-        } while (!input.equals("exit"));*/
-
-        //raggruppo tutto nell'array
+        //raggruppo tutto nell'array creando i singoli elemnti fino a 5
         MultimediaItem[] multimediaItemsArray = new MultimediaItem[5];
 
         for (int i=0; i < multimediaItemsArray.length; i++){
@@ -98,7 +48,7 @@ public class Main {
                     break;
             }
         }
-
+        //ora posso scegliere quale mostrare tra gli elementi creati, con il controllo tra le classi
         int userChoise;
         do{
             System.out.println("Scegli un elemento da eseguire (da 1 a 5), oppure digita '0' per uscire.");

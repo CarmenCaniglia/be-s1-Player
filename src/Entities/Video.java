@@ -7,8 +7,8 @@ public class Video extends MultimediaItem implements Playable, Adjustable {
     public Video (String title, int duration, int volume, int brightness){
         super(title);
         this.duration= duration;
-        this.brightness = 5;
-        this.volume = 10;
+        this.brightness = brightness;
+        this.volume = volume;
     }
     public int getDuration() {
         return duration;
@@ -28,7 +28,15 @@ public class Video extends MultimediaItem implements Playable, Adjustable {
 
     @Override
     public void play() {
-        System.out.println("Riproduci video: "+getTitle() + "per " +getDuration()+"sec");
+        System.out.println("Riproduci video: "+getTitle() + " per " +getDuration()+"sec");
+        for (int i = 0; i<volume; i++){
+            System.out.println("!");
+        }
+
+        for (int i = 0; i < brightness; i++) {
+            System.out.println("*");
+        }
+        System.out.println();
     }
 
     @Override

@@ -7,7 +7,7 @@ public class Audio extends MultimediaItem implements Playable{
     public Audio (String title, int duration, int volume){
         super(title);
         this.duration = duration;
-        this.volume = 10;
+        this.volume = volume;
     }
 
     public int getDuration() {
@@ -16,7 +16,11 @@ public class Audio extends MultimediaItem implements Playable{
 
     @Override
     public void play() {
-        System.out.println("Riproduci audio: " + getTitle() + "per " + getDuration() + "sec");
+        System.out.println("Riproduci audio: " + getTitle() + " per " + getDuration() + "sec");
+        for (int i = 0; i<volume; i++){
+            System.out.println("!");
+        }
+        System.out.println();
     }
 
     @Override

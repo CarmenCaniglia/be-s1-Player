@@ -5,7 +5,7 @@ public class Image extends MultimediaItem implements Adjustable{
 
     public Image (String title, int brightness){
         super(title);
-        this.brightness = 5;
+        this.brightness = brightness;
     }
     //show() solo per le immagini
     public void show(){
@@ -13,7 +13,6 @@ public class Image extends MultimediaItem implements Adjustable{
         for(int i = 0; i < brightness; i++){
             System.out.println("*");
         }
-
     }
     @Override
     public void brightUp() {
